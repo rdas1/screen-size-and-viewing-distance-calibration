@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div id="distanceDiv">
+	<h1>Viewing Distance Calibration</h1>
+	<h2>Now, we'll measure your viewing distance (the distance from your eye to the screen).</h2>
+	<h2>To do this, we'll perform a blind spot test.</h2>
+	<h2>Cover or close your left eye and focus on the black square. Press the spacebar when the red circle disappears from view. If it doesn't disappear, you may have to move closer or farther from the screen.</h2>
+	<div class="blindSpotContainer">
+
+		<b>Which eye are you closing?</b>
+		<br>
+		<input type="radio" id="leftButton" name="choice" value="left" checked>Left
+		<input type="radio" id="rightButton" name="choice" value="right">Right
+
+		<canvas id="blindSpotCanvas" style="border: solid #006699;"></canvas>
+		<h4>When the distance seems correct, click next.</h4>
+	 	<button id="nextButton" onclick="trackDistance()">Next</button>
+	</div>
+</div>
+
+<script src="js/distance.js"></script>
+</body>
+</html>

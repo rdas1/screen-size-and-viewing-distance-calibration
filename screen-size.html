@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div id="sizeDiv" style="text-align: center">
+	<h1>Screen Size Calibration</h1>
+	<h2>First, we'll use a credit card (or a card of equal size, like a driver's license) to calculate the real-life size of your computer screen.</h2>
+	<div class="slidecontainer">  
+	  <h2>Align the top left corner of your card with the top left corner of the rectangle.<br/>Then, drag the slider to measure the length of your card:</h2>
+	  <input type="range" min="1" max="1000" value="1000" class="slider" id="myRange" style="margin-bottom: 10px;">
+	  <div id="alignment"><div id="alignment2"><pre>Place the top left corner of <br/>your card at the corner above.</pre></div></div>
+	  <h3>Screen Diagonal: <span id="diagonalOutput"></span></h3>
+	  <h3>Screen Width: <span id="widthOutput"></span></h3>
+	  <h3>Screen Height: <span id="heightOutput"></span></h3>
+	  <h4>When you're ready, click Next.</h4>	
+	  <!-- <button id="nextButton" onclick="measureDistance()">Next</button> -->
+	  <form method="POST" action="./viewing-distance.html">
+    	<input type="submit" value="Next"/>
+	  </form>
+	</div>
+</div>
+
+<script src="./js/slider.js"></script>
+
+</body>
+</html>
